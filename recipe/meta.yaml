@@ -1,6 +1,6 @@
 {% set name = "bfg" %}
-{% set version = "1.12.15" %}
-{% set sha256 = "330af214a0fed320c591afc1046b0f31e8a438f290da09672973aeaa6411b09d" %}
+{% set version = "1.13.0" %}
+{% set sha256 = "bf22bab9dd42d4682b490d6bc366afdad6c3da99f97521032d3be8ba7526c8ce" %}
 
 package:
   name: {{ name }}
