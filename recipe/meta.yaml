@@ -1,23 +1,20 @@
 {% set name = "bfg" %}
 {% set version = "1.13.0" %}
-{% set sha256 = "bf22bab9dd42d4682b490d6bc366afdad6c3da99f97521032d3be8ba7526c8ce" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.jar
   url: http://repo1.maven.org/maven2/com/madgag/{{ name }}/{{ version }}/{{ name }}-{{ version }}.jar
-  sha256: {{ sha256 }}
+  sha256: bf22bab9dd42d4682b490d6bc366afdad6c3da99f97521032d3be8ba7526c8ce
   
 build:
-  number: 0
-  skip: True  # [win]
+  number: 1
 
 requirements:
   run:
-    - openjdk
+    - openjdk >=8
 
 test:
   commands:
