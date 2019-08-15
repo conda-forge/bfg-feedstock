@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar ${PREFIX}/lib/bfg.jar "$@"
+java -jar ${CONDA_PREFIX}/lib/bfg.jar "$@"
