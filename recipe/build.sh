@@ -1,4 +1,5 @@
 #!/bin/sh
 mkdir $PREFIX/lib
-cp $RECIPE_DIR/bfg $PREFIX/bin
+echo "#!/bin/sh" >> $PREFIX/bin/bfg
+echo "java -jar ${PREFIX}/lib/bfg.jar \"$@\"" >> $PREFIX/bin/bfg
 cp $SRC_DIR/$PKG_NAME-$PKG_VERSION.jar $PREFIX/lib/bfg.jar
