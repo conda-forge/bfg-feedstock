@@ -1,3 +1,4 @@
 mkdir "%PREFIX%"\lib
+mkdir "%SCRIPTS%"\
 copy "%SRC_DIR%\%PKG_NAME%-%PKG_VERSION%.jar" "%PREFIX%\lib\bfg.jar"
-copy "%RECIPE_DIR%\bfg.bat" "%SCRIPTS%\bfg.bat"
+echo java -jar %PREFIX%\lib\bfg.jar %%* >> "%SCRIPTS%\bfg.bat"
