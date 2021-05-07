@@ -18,7 +18,7 @@ requirements:
 
 test:
   commands:
-    - bfg
+    - bfg | grep "{{ version }}"
 
 about:
   home: https://rtyley.github.io/bfg-repo-cleaner/
