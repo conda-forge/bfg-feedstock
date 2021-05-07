@@ -23,7 +23,7 @@ test:
 about:
   home: https://rtyley.github.io/bfg-repo-cleaner/
   summary: 'BFG Repo-Cleaner'
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_file: LICENSE
   license_family: GPL
   doc_url: https://rtyley.github.io/bfg-repo-cleaner/
