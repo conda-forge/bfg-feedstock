@@ -19,7 +19,7 @@ requirements:
 test:
   commands:
     - bfg | grep "{{ version }}"  # [not win]
-    - bfg | findstr /c:"{{ version }}}"  # [win]
+    - bfg | findstr /c:"{{ version }}"  # [win]
 
 about:
   home: https://rtyley.github.io/bfg-repo-cleaner/
