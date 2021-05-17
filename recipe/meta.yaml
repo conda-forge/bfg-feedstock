@@ -1,5 +1,5 @@
 {% set name = "bfg" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://repo1.maven.org/maven2/com/madgag/{{ name }}/{{ version }}/{{ name }}-{{ version }}.jar
-  sha256: bf22bab9dd42d4682b490d6bc366afdad6c3da99f97521032d3be8ba7526c8ce
-  
+  sha256: 1a75e9390541f4b55d9c01256b361b815c1e0a263e2fb3d072b55c2911ead0b7
+
 build:
-  number: 3
+  number: 0
 
 requirements:
   run:
@@ -23,7 +23,7 @@ test:
 
 about:
   home: https://rtyley.github.io/bfg-repo-cleaner/
-  summary: 'BFG Repo-Cleaner'
+  summary: BFG Repo-Cleaner
   license: GPL-3.0-only
   license_file: LICENSE
   license_family: GPL
