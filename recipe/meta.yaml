@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: http://repo1.maven.org/maven2/com/madgag/{{ name }}/{{ version }}/{{ name }}-{{ version }}.jar
+  url: https://repo1.maven.org/maven2/com/madgag/{{ name }}/{{ version }}/{{ name }}-{{ version }}.jar
   sha256: bf22bab9dd42d4682b490d6bc366afdad6c3da99f97521032d3be8ba7526c8ce
   
 build:
-  number: 2
+  number: 3
 
 requirements:
   run:
@@ -18,12 +18,13 @@ requirements:
 
 test:
   commands:
-    - bfg
+    - bfg | grep "{{ version }}"  # [not win]
+    - bfg | findstr /c:"{{ version }}"  # [win]
 
 about:
   home: https://rtyley.github.io/bfg-repo-cleaner/
   summary: 'BFG Repo-Cleaner'
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_file: LICENSE
   license_family: GPL
   doc_url: https://rtyley.github.io/bfg-repo-cleaner/
@@ -31,5 +32,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - JohnGreeley
     - carlodri
+    - janjagusch
