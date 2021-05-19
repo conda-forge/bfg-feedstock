@@ -7,7 +7,7 @@ mkdir -p $PREFIX/bin
 cp $SRC_DIR/$PKG_NAME-$PKG_VERSION.jar $PREFIX/lib/bfg.jar
 
 cat <<'EOF' >${PREFIX}/bin/bfg
-#!/bin/sh
+#!/bin/bash
 
 PREFIX_DIR=$(dirname ${BASH_SOURCE})
 # Make PREDIX_DIR absolute
