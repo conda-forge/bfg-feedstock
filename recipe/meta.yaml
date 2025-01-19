@@ -1,5 +1,5 @@
 {% set name = "bfg" %}
-{% set version = "1.14.0" %}
+{% set version = "1.15.0" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://repo1.maven.org/maven2/com/madgag/{{ name }}/{{ version }}/{{ name }}-{{ version }}.jar
-  sha256: 1a75e9390541f4b55d9c01256b361b815c1e0a263e2fb3d072b55c2911ead0b7
+  sha256: dfe2885adc2916379093f02a80181200536856c9a987bf21c492e452adefef7a
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   run:
